@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>wizaah</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="headingnav">
+       <div class="offerhead">FREE DELIVERY ON ORDERS ABOVE Rs. 2000/-</div>
+       <nav class="navbar">
+            <label for="cheackb" class="bars"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" name="cheackbox" id="cheackb">
+           <div class="logo"><img src="./asset/images/black_logo.png" alt="logo" width="100%"></div>
+           <ul class="ulFt">
+            <li><a href="#">men</a></li>
+            <li><a href="#">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="#">home & living</a></li>
+           </ul>
+           <div class="img_log">
+            <ul>
+                <li><a href=""></a> <i class="fa-solid fa-magnifying-glass"></i></li>
+                <li class="usernav"><a href=""></a><i class="fa-regular fa-user"></i></li>
+                <li class="cartlogo" id="cartlogo"><a href=""></a><img src="./asset/images/icon-cart.svg" alt="shoping" width="30px"></i>
+                <div class="cartamount" id="cartnum">0</div></li>
+                <div class="cartwindo" id="cartwindo">
+                    <h3>Shopping Bag</h3>
+                    <div class="innerCart" id="innerCart">
+                        <div class="car_image_det">
+                            <img src="./asset/images/product-image-1.png" alt="imga1" width="50" height="50">
+                        </div>
+                        <div class="car_image_det_prize">
+                            <h6>ruffled sleeveless top </h6>
+                                <h4 id="innercrtnum">1</h4>
+                        </div>
+                        <div class="remove_cart" id="remove_cart"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                </div>
+            </ul>
+           </div>
+       </nav>
+    </div>
+    <!-- header end -->
+
+    <!--main  -->
+    <!-- <div class="carousel" data-flickity='{"draggable": true}'>
+        <div class="carousel-cell"><img src="./asset/images/product-image-1.png"  alt=""></div>
+        <div class="carousel-cell"><img src="./asset/images/product-image-2.png" alt=""></div>
+        <div class="carousel-cell"><img src="./asset/images/product-image-3.png" alt=""></div>
+        <div class="carousel-cell"><img src="./asset/images/product-image-1.png" alt=""></div>
+
+    </div> -->
+    <!-- Flickity HTML init -->
+<div class="carousel carousel-main" data-flickity>
+    <div class="carousel-cell"><img src="./asset/images/product-image-1.png"  alt=""></div>
+    <div class="carousel-cell"><img src="./asset/images/product-image-2.png" alt=""></div>
+    <div class="carousel-cell"><img src="./asset/images/product-image-3.png" alt=""></div>
+    <div class="carousel-cell"><img src="./asset/images/product-image-1.png" alt=""></div>
+  </div>
+  
+  <div class="carousel carousel-nav"
+    data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+    <div class="carousel-cell"><img src="./asset/images/product-image-1.png"  alt=""></div>
+    <div class="carousel-cell"><img src="./asset/images/product-image-2.png" alt=""></div>
+    <div class="carousel-cell"><img src="./asset/images/product-image-3.png" alt=""></div>
+    <div class="carousel-cell"><img src="./asset/images/product-image-1.png" alt=""></div>
+  </div>
+  
+    <div class="main">
+        <section class="imgsection">
+            <div class="row" id="rowShop"> 
+                <div class="column">
+                    <img src="./asset/images/product-image-1.png" alt="image1" width="100%">
+                    <img src="./asset/images/product-image-2.png" alt="image2"  width="100%">
+                </div>
+                <div class="column">
+                    <img src="./asset/images/product-image-3.png" alt="image3"  width="100%">
+                    <img src="./asset/images/product-image-2.png" alt="image4"  width="100%">
+                </div>
+               
+            </div>
+
+        </section>
+        <section class="detsection">
+            <samp>CLOTHING COMPANY</samp>
+            <h1 class="proTitle">ruffled sleeveless top</h1>
+            <div class="prize_div"><samp><del>Rs: 1,500.00</del> <span class="prize">Rs.899.00</span> <button class="sale_btn">sale</button></samp></div>
+            <samp>size</samp>
+            <div class="size_btn_div">
+                <button class="size_btn">S</button>
+                <button class="size_btn">M</button>
+                <button class="size_btn">L</button>
+                <button class="size_btn">XL</button>
+            </div>
+            <samp>quantity</samp>
+            <div class="count_btn">
+                <button id="dec" 
+                class="count_dec_btn">-</button>
+                <span id="cont_val">1</span>
+                <button  id="inc" class="count_inc_btn">+</button>
+            </div>
+            <button id="additam" class="add_cat_btn">Add to cart</button>
+            <button class="add_cat_btn">Buy it now</button>
+            <p>A dreamy feminine piece, this top is made from a medium weight, extra soft cotton blend with a light airy feel and paper-like quality.</p>
+            <p>Designed with voluminous ruffled straps as well as ruffle details across the chest, it has a straight cut fit and a square neckine</p>
+            <div class="discr_nav">
+                <ul>
+                    <li><img src="./asset/images/icon-materials.svg" alt="material"><a href="">materials</a><i class="fa-solid fa-angle-down downarrow"></i></li>
+                    <li><img src="./asset/images/icon-shipping.svg" alt="bus"><a href="">shipping & returns</a><i class="fa-solid fa-angle-down downarrow"></i></li>
+                    <li><img src="./asset/images/icon-dimensions.svg" alt=""><a href="">dimesions</a><i class="fa-solid fa-angle-down downarrow"></i></li>
+                    <li><img src="./asset/images/icon-care.svg" alt=""><a href="">care instructions</a><i class="fa-solid fa-angle-down downarrow"></i></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="./asset/script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

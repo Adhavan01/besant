@@ -1,0 +1,117 @@
+
+@import "./guide";
+
+//overnav
+.offerhead{
+    color: #ffff;
+    background-color: $Green;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+    .logo{
+        width: 200px;
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: $Black;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 0% 10px;
+        font-size: 18px;
+      
+    }
+    .cartlogo{
+        position: relative;
+        bottom: -10px;
+        
+    }
+    .cartamount{
+        background-color: $Green;
+        color: #fff;
+        padding: 0px 2px;
+        border-radius: 10px;
+        font-size: 10px;
+        left: 35px;
+        bottom: 6px;
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+    }
+    .img_log{
+        text-align: center;
+    }
+}
+.headingnav{
+    border-bottom: 1px solid rgba(184, 182, 182, 0.432);
+    .bars{     display: none;
+        i{
+            font-size: 18px;
+            font-weight: 700;
+         
+        }
+    }
+    #cheackb{
+        display: none;
+    }
+}
+//mobile view
+@media only screen and (max-width: 375px){
+    .headingnav{
+        .bars{
+
+                display: block;
+        }
+        .navbar{
+
+            #cheackb:checked ~ .ulFt{
+                left: 0%;
+            }
+            #cheackb:checked ~ .bars i::before{
+                content: "\f00d";
+            }
+            .ulFt{
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                height: 100vh;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.863);
+                padding: 20px 0;
+                transition: 0.3s ease;
+                z-index: 10;
+                li{
+                    display: block;
+                    text-align: center;
+                    padding: 20px ;
+                a{
+                    color: #fff;
+                    display: block;
+                }
+                a:hover{
+                    color: aqua;
+                }
+                }
+            }
+            .logo{
+                width: 150px;
+            }
+            .usernav{
+                display: none;
+            }
+        }
+    }
+}
